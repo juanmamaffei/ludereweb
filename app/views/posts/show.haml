@@ -1,0 +1,31 @@
+.card.marco
+  %h3.center
+    = @post.titulo
+  .divider
+  .datapub
+    %i.material-icons face
+    = @post.autor
+    |
+    %i.material-icons date_range
+    = @post.created_at.to_date
+    |
+    %i.material-icons assignment
+    = @post.materia_id
+    |
+  .divider
+
+  = raw @post.contenido
+
+  %ul{:class=>"collapsible", "data-collapsible"=>"accordion"}
+    %li
+      .collapsible-header
+        %i.material-icons local_library
+        Bibliografía
+      .collapsible-body
+        = raw @post.bibliografia
+    %li
+      .collapsible-header
+        %i.material-icons bookmark
+        Etiquetas
+      .collapsible-body
+        = @post.tags

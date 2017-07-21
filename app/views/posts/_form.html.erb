@@ -1,0 +1,62 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo, id: :post_titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :autor %>
+    <%= form.text_field :autor, id: :post_autor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tags, id: :post_tags %>
+  </div>
+
+  <div class="field">
+    <%= form.label :materia_id %>
+    <%= form.text_field :materia_id, id: :post_materia_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_field :descripcion, id: :post_descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orden %>
+    <%= form.number_field :orden, id: :post_orden %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tiempo %>
+    <%= form.number_field :tiempo, id: :post_tiempo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contenido %>
+    <%= form.text_area :contenido, id: :post_contenido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bibliografia %>
+    <%= form.text_field :bibliografia, id: :post_bibliografia %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

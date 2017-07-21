@@ -17,3 +17,20 @@
 $primary-color: color("teal", "base") !default;
 $secondary-color: color("green", "lighten-4") !default;
 @import "materialize";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.marco{
+	padding:30px;
+	font-family: 'Quicksand', sans-serif;
+	text-align: justify;
+
+}
+.datapub {
+    text-align: end;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: small;
+    i.material-icons{
+        font-size: small;
+    }
+}

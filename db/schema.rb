@@ -10,7 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170721054243) do
+ActiveRecord::Schema.define(version: 20170721174044) do
+
+  create_table "materia", force: :cascade do |t|
+    t.string "nombre"
+    t.string "nivel"
+    t.string "descripcion"
+    t.string "objetivos"
+    t.string "bibliografia"
+    t.string "evaluacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "titulo"
+    t.string "autor"
+    t.string "tags"
+    t.string "descripcion"
+    t.integer "orden"
+    t.integer "tiempo"
+    t.text "contenido"
+    t.string "bibliografia"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "materia_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

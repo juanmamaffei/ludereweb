@@ -40,6 +40,7 @@ gem 'devise'
 gem 'devise-i18n-views' #Devise en español
 gem 'materialize-rails'
 gem 'materialize-sass'
+gem 'material_icons'
 gem 'paperclip'
 
 

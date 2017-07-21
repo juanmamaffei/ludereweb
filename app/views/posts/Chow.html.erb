@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @post.titulo %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @post.autor %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @post.tags %>
+</p>
+
+<p>
+  <strong>Materia:</strong>
+  <%= @post.materia_id %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @post.descripcion %>
+</p>
+
+<p>
+  <strong>Orden:</strong>
+  <%= @post.orden %>
+</p>
+
+<p>
+  <strong>Tiempo:</strong>
+  <%= @post.tiempo %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @post.contenido %>
+</p>
+
+<p>
+  <strong>Bibliografia:</strong>
+  <%= @post.bibliografia %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

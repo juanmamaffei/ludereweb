@@ -1,0 +1,55 @@
+%html
+  %head
+    %title Ludere
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel =>"stylesheet"}
+
+  %body.grey.lighten-4
+    %nav.inverse
+      .container.nav-wrapper
+        %a{:href=> "/", :class=>"brand-logo"}
+          %i.material-icons play_arrow
+          .logo Ludere
+        %a{:href=> "#!", :class=>"button-collapse", "data-activates"=>"mobile-demo"}
+          %i.material-icons menu
+
+        %ul.right.hide-on-med-and-down
+          %li
+            =link_to("Aprender", materia_path)
+          %li
+            %a{:href=> "#!"} Apps
+          %li
+            =link_to("Publicaciones", posts_path)
+
+        %ul{:class=>"side-nav", :id=>"mobile-demo"}
+          %li
+            %a{:href=> "#!"} Aprender
+          %li
+            %a{:href=> "#!"} Apps
+          %li
+            %a{:href=> "#!"} Publicaciones
+        :javascript
+          $(".button-collapse").sideNav();
+    .container
+      = yield
+    %footer.page-footer
+      .container
+        .row
+          .col.s6
+            %ul
+              %li Nuestro equipo
+              %li ¡Quiero colaborar!
+          .col.s6
+            %ul.right
+              %li Términos y condiciones
+              %li Privacidad
+              %li Redes sociales
+      .footer-copyright
+        .container.center
+          Ludere
+          %i.tiny.material-icons copyright
+          |
+          %a{:rel=>"license", :href=>"http://creativecommons.org/licenses/by/4.0/"}
+            %img{:alt=>"Creative Commons License", :style=>"border-width:0", :src=>"https://i.creativecommons.org/l/by/4.0/80x15.png"}

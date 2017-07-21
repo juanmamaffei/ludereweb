@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @materium.nombre %>
+</p>
+
+<p>
+  <strong>Nivel:</strong>
+  <%= @materium.nivel %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @materium.descripcion %>
+</p>
+
+<p>
+  <strong>Objetivos:</strong>
+  <%= @materium.objetivos %>
+</p>
+
+<p>
+  <strong>Bibliografia:</strong>
+  <%= @materium.bibliografia %>
+</p>
+
+<p>
+  <strong>Evaluacion:</strong>
+  <%= @materium.evaluacion %>
+</p>
+
+<%= link_to 'Edit', edit_materium_path(@materium) %> |
+<%= link_to 'Back', materia_path %>

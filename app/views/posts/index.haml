@@ -1,0 +1,21 @@
+.container.marco
+  .row.center
+    %h3 Publicaciones
+    .chip Todo
+  .row
+    -@posts.each do |post|
+
+      .col.s12.m4
+        .card
+          .card-image
+            %h5
+              = post.titulo
+            %br
+            %small
+              %i.tiny.material-icons face
+              = post.autor
+          .card-stacked
+            .card-content
+              = post.descripcion
+            .card-action
+              = link_to 'Leer', post

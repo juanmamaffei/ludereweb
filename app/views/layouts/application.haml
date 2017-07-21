@@ -18,22 +18,40 @@
         %ul.right.hide-on-med-and-down
           %li
             =link_to("Aprender", materia_path)
-          %li
-            %a{:href=> "#!"} Apps
+          /  %li
+          /    %a{:href=> "#!"} Apps
           %li
             =link_to("Publicaciones", posts_path)
+          -if user_signed_in?
+            %li
+              Usuario
+          -else
+            %li
+              =link_to "Crear cuenta", new_user_registration_path
+            %li
+              =link_to "Iniciar sesión", user_session_path
+          
 
         %ul{:class=>"side-nav", :id=>"mobile-demo"}
           %li
             %a{:href=> "#!"} Aprender
-          %li
-            %a{:href=> "#!"} Apps
+          /  %li
+          /    %a{:href=> "#!"} Apps
           %li
             %a{:href=> "#!"} Publicaciones
+          
+          -if user_signed_in?
+            %li
+              Usuario
+          -else
+            %li
+              =link_to "Crear cuenta", new_user_registration_path
+            %li
+              =link_to "Iniciar sesión", user_session_path
         :javascript
           $(".button-collapse").sideNav();
-    .container
-      = yield
+    
+    = yield
     %footer.page-footer
       .container
         .row

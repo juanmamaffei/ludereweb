@@ -1,0 +1,34 @@
+.container
+  .card.marco
+    %h3.center
+      = @materium.nombre
+    .divider
+    .datapub
+      Nivel: 
+      = @materium.nivel
+      |
+      %i.material-icons date_range
+      = @materium.created_at.to_date
+  
+    = raw @materium.descripcion
+
+
+.container
+  .card.marco
+    %h3.center Objetivos
+    %p  
+      Luego de recorrer este material, podrás:
+    
+    = raw @materium.objetivos
+
+.container
+  .card.marco
+    %h3.center Bibliografía
+      
+    = raw @materium.bibliografia
+
+.container
+  .card.marco
+    %h3.center Evaluación
+      
+    = @materium.evaluacion

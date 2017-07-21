@@ -1,29 +1,33 @@
-.card.marco
-  %h3.center Novedades Título de la publicación
+.parallax-container
+  .parallax
+    =image_tag("parallax.jpg")
+  %h3.center Bienvenido a Ludere
+
+:javascript
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+.container
+  .row.center
+    En este sitio encontrarás, de manera gratuita, recursos didácticos para aprender distintas disciplinas, aplicaciones para docentes y publicaciones de divulgación científica y tecnológica.
   .divider
-  .datapub
-    %i.material-icons face
-    Juan Manuel Maffei |
-    %i.material-icons date_range
-    21 de julio de 2017 |
-    %i.material-icons assignment
-    Matemática I |
-  .divider
-
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue ante nisi, id fringilla lacus egestas quis. Duis lobortis velit ut ante facilisis accumsan. Curabitur imperdiet dolor at dictum egestas. Curabitur luctus, felis in pulvinar pellentesque, eros sapien convallis felis, vitae faucibus nibh dui id sem. Sed sit amet risus nec turpis luctus ullamcorper. Suspendisse vestibulum volutpat mi sed tempor. Cras at laoreet elit.
-  %blockquote
-    Esto es una cita (Pedro Aznar, 2017)
-  %p Sed aliquet, est ac venenatis scelerisque, dui arcu lacinia ex, a molestie nibh augue vitae risus. Fusce tristique urna nec turpis laoreet, at fermentum diam laoreet. Fusce laoreet, ligula et venenatis sagittis, mi est convallis purus, et malesuada est enim sed sem. Sed dui dui, efficitur sit amet lacus eu, posuere cursus tortor. Vestibulum finibus a neque vel tristique. Curabitur vitae elit volutpat, semper nisi at, commodo elit. Duis ac congue elit. Praesent euismod dictum sapien, ac feugiat orci bibendum a. Donec sapien orci, lobortis ut arcu nec, vestibulum scelerisque arcu. Morbi nec metus aliquet, ultrices magna vel, pellentesque magna.
-
-  %p Aenean quam ex, mattis at magna in, pulvinar rhoncus dui. Nunc vehicula, ligula luctus ultrices tempor, enim dui tempus nibh, ut luctus massa sapien vitae felis. Sed dapibus, libero ac volutpat congue, purus urna sollicitudin arcu, nec condimentum leo est id mauris. Proin eu mauris et ex rhoncus finibus et id leo. Nunc urna ligula, tincidunt id placerat ut, consequat sed dolor. In sodales placerat enim ut porttitor. Nullam pharetra lectus eget turpis gravida, et interdum lacus placerat. Aliquam scelerisque, libero vel scelerisque lacinia, mi sem mollis libero, eget tempor leo velit nec orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In efficitur orci at orci vulputate laoreet. Ut ullamcorper, turpis at feugiat efficitur, turpis ex dapibus nisl, et placerat nulla diam in odio. Nulla massa felis, fermentum non tincidunt a, fermentum a nunc.
-
-  %p Cras a mollis magna, id commodo dui. Integer dolor purus, ultricies ac urna id, vehicula lacinia metus. Nunc nunc lacus, ultricies porta massa gravida, varius fermentum massa. Cras nec faucibus orci, at consequat mauris. Morbi ac feugiat leo. Nunc mauris ligula, mollis placerat diam quis, ultrices aliquam nisi. Fusce vitae cursus nisl. Donec nec suscipit massa.
-
-  %p Sed non ultrices elit. Mauris lectus augue, volutpat sed laoreet ut, rhoncus congue risus. Fusce pulvinar, orci molestie luctus commodo, arcu risus ultrices magna, sit amet finibus urna lectus sodales erat. Duis diam metus, consequat vel aliquam ut, euismod ut nunc. Mauris sit amet metus euismod, malesuada tortor sed, ullamcorper ante. Aenean porttitor elementum rhoncus. Ut nec dignissim nisl. Nulla laoreet metus at vulputate varius. Duis eu neque nulla. Sed varius hendrerit tortor, sit amet ornare elit sagittis sed. Curabitur tempor aliquet nisl, sed vulputate quam lobortis eu. Duis ullamcorper ornare lacus eu consectetur. Ut vehicula iaculis dapibus. Aliquam erat volutpat. Donec sodales molestie lectus vitae sodales. Pellentesque lobortis neque metus, a luctus sem pellentesque at.
-  %ul{:class=>"collapsible", "data-collapsible"=>"accordion"}
-    %li
-      .collapsible-header
-        %i.material-icons local_library
-        Bibliografía
-      .collapsible-body
-        %span Aznar, Pedro (2017). Quebrado. Buenos Aires
+  .row
+    Álgebra y Aritmética
+  .row
+    Aplicaciones de la matemática a la economía
+  .row
+    Precálculo
+  .row
+    Cálculo en una variable
+  .row
+    Cálculo multivariable
+  .row
+    Dibujo técnico
+  .row
+    Electricidad básica
+  .row
+    Electrónica analógica
+  .row
+    Electrónica digital
+  .row
+    Programación

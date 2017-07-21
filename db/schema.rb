@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170721174044) do
+ActiveRecord::Schema.define(version: 20170721214114) do
 
   create_table "materia", force: :cascade do |t|
     t.string "nombre"
@@ -48,9 +48,24 @@ ActiveRecord::Schema.define(version: 20170721174044) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.string "name"
+    t.string "lastname"
+    t.string "country"
+    t.string "city"
+    t.string "address"
+    t.integer "dni"
     t.integer "privilegios", default: 0, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "provider"
+    t.string "uid"
+    t.text "bio"
+    t.string "facebook"
+    t.string "twitter"
+    t.string "instragram"
+    t.string "pinterest"
+    t.string "tumblr"
+    t.string "googleplus"
+    t.string "youtube"
+    t.string "website"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

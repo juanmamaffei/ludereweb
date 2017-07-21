@@ -1,0 +1,21 @@
+.container.marco
+  .row.center
+    %h3 ¿Qué vamos a aprender?
+    .chip Todo
+  .row
+    -@materia.each do |materium|
+
+      .col.s12.m4
+        .card
+          .card-image
+            %h5
+              = materium.nombre
+            %br
+            %small
+              Nivel: 
+              = materium.nivel
+          .card-stacked
+            .card-content
+              = materium.descripcion
+            .card-action
+              = link_to 'Entrar', materium

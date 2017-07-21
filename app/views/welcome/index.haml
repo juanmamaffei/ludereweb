@@ -1,0 +1,22 @@
+.slider.fullscreen
+  %ul.slides
+    %li
+      = image_tag "https://lorempixel.com/580/250/nature/1"
+      .caption.center-align
+        %h3 Aprender
+        %h5 Subtítulo
+    %li
+      = image_tag "https://lorempixel.com/580/250/nature/2"
+      .caption.center-align
+        %h3 Aplicaciones
+        %h5 Subtítulo
+    %li
+      = image_tag "https://lorempixel.com/580/250/nature/2"
+      .caption.center-align
+        %h3 Publicaciones
+        %h5 Subtítulo
+
+:javascript
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
